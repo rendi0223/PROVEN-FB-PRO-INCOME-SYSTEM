@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="monetag" content="fc0d2a367438249ea0d90ec4c43ca365">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proven FB Pro Income System</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+    background: linear-gradient(180deg, #1877f2, #0a2a66);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    background: #fff;
+    width: 100%;
+    max-width: 430px;
+    border-radius: 22px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  }
+  .logo { font-size: 28px; font-weight: 800; color: #1877f2; }
+  .tagline {
+    font-size: 13px; color: #1877f2; background: #e7f3ff;
+    display: inline-block; padding: 6px 14px; border-radius: 20px;
+    margin: 12px 0 20px; font-weight: 600;
+  }
+  h1 { font-size: 22px; color: #1c1e21; margin-bottom: 12px; }
+  .desc { font-size: 14px; color: #4b4f56; margin-bottom: 18px; }
+
+  .progress-wrap {
+    background: #f0f2f5; border-radius: 12px; overflow: hidden;
+    height: 12px; margin-bottom: 8px;
+  }
+  .progress-bar {
+    height: 100%; width: 0%;
+    background: linear-gradient(90deg, #1877f2, #4dabf7);
+  }
+  .progress-text { font-size: 12px; color: #65676b; margin-bottom: 18px; }
+
+  .btn {
+    display: block; padding: 15px; margin: 10px 0;
+    border-radius: 14px; text-decoration: none; font-weight: 700;
+    color: #fff; background: linear-gradient(135deg, #1877f2, #42a5f5);
+    box-shadow: 0 6px 18px rgba(24,119,242,0.45);
+    opacity: .35; pointer-events: none; transition: .3s;
+  }
+  .btn.active { opacity: 1; pointer-events: auto; }
+  .note { font-size: 12px; color: #8a8d91; margin-top: 16px; }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="logo">FB PRO</div>
+  <div class="tagline">Global Monetization System</div>
+
+  <h1>Proven FB Pro Income System</h1>
+  <div class="desc">
+    System is preparing the best monetization route based on your region.
+  </div>
+
+  <div class="progress-wrap">
+    <div class="progress-bar" id="bar"></div>
+  </div>
+  <div class="progress-text" id="text">Initializing…</div>
+
+  <a class="btn" data-link="https://otieu.com/4/10523960">💰 Route 1 – Starter</a>
+  <a class="btn" data-link="https://otieu.com/4/10523959">📈 Route 2 – Growth</a>
+  <a class="btn" data-link="https://otieu.com/4/10523958">🔥 Route 3 – Traffic</a>
+  <a class="btn" data-link="https://otieu.com/4/10495863">🚀 Route 4 – Monetize</a>
+  <a class="btn" data-link="https://otieu.com/4/10441516">👑 Route 5 – Scale</a>
+
+  <div class="note">18+ | Access may vary by region</div>
+</div>
+
+<script>
+/* FAKE PROGRESS */
+let p=0, bar=document.getElementById("bar"),
+txt=document.getElementById("text"),
+btns=document.querySelectorAll(".btn");
+
+const msg=["Initializing…","Analyzing account…","Checking status…","Optimizing…","Ready"];
+let iv=setInterval(()=>{
+  p+=5; bar.style.width=p+"%";
+  if(p===25) txt.innerText=msg[1];
+  if(p===50) txt.innerText=msg[2];
+  if(p===75) txt.innerText=msg[3];
+  if(p>=100){
+    clearInterval(iv);
+    txt.innerText="Select your route";
+    btns.forEach(b=>b.classList.add("active"));
+  }
+},120);
+
+/* SAFE ADS LOADER */
+let adsLoaded=false;
+function loadAds(){
+  if(adsLoaded) return;
+  adsLoaded=true;
+
+  setTimeout(()=>{
+    let s1=document.createElement("script");
+    s1.src="https://quge5.com/88/tag.min.js";
+    s1.dataset.zone="205819";
+    s1.async=true;
+    s1.setAttribute("data-cfasync","false");
+    document.body.appendChild(s1);
+  },800);
+
+  setTimeout(()=>{
+    let s2=document.createElement("script");
+    s2.src="https://al5sm.com/tag.min.js";
+    s2.dataset.zone="10524095";
+    document.body.appendChild(s2);
+  },1600);
+
+  setTimeout(()=>{
+    let s3=document.createElement("script");
+    s3.src="https://3nbf4.com/act/files/tag.min.js?z=10524098";
+    s3.async=true;
+    s3.setAttribute("data-cfasync","false");
+    document.body.appendChild(s3);
+  },2400);
+
+  setTimeout(()=>{
+    let s4=document.createElement("script");
+    s4.src="https://gizokraijaw.net/vignette.min.js";
+    s4.dataset.zone="10524099";
+    document.body.appendChild(s4);
+  },3200);
+
+  setTimeout(()=>{
+    let s5=document.createElement("script");
+    s5.src="https://gizokraijaw.net/vignette.min.js";
+    s5.dataset.zone="10524106";
+    document.body.appendChild(s5);
+  },4000);
+}
+
+/* CLICK HANDLER */
+btns.forEach(b=>{
+  b.addEventListener("click",e=>{
+    e.preventDefault();
+    loadAds();
+    setTimeout(()=>{ window.location.href=b.dataset.link; },600);
+  });
+});
+</script>
+
+</body>
+</html>
