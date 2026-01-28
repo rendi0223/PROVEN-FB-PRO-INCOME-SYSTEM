@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB Pro Creator Resources</title>
+
+  <style>
+    :root{
+      --fb:#1877F2;
+      --bg:#f3f6ff;
+      --card:#ffffff;
+      --border:#dbe7ff;
+      --text:#1c1e21;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+    }
+
+    body{
+      background:linear-gradient(180deg,var(--bg),#fff);
+      color:var(--text);
+    }
+
+    .wrap{
+      max-width:440px;
+      margin:auto;
+      padding:28px 16px 60px;
+    }
+
+    /* Loader */
+    #loader{
+      position:fixed;
+      inset:0;
+      background:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:9999;
+    }
+
+    .spin{
+      width:46px;
+      height:46px;
+      border-radius:50%;
+      border:5px solid #ddd;
+      border-top:5px solid var(--fb);
+      animation:spin 1s linear infinite;
+    }
+
+    @keyframes spin{
+      to{transform:rotate(360deg)}
+    }
+
+    /* Header */
+    h1{
+      text-align:center;
+      font-size:22px;
+      font-weight:800;
+      margin-bottom:10px;
+    }
+
+    p{
+      text-align:center;
+      font-size:14px;
+      opacity:.8;
+      line-height:1.4;
+      margin-bottom:24px;
+    }
+
+    /* Buttons */
+    .links{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .btn{
+      display:block;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      text-align:center;
+      font-size:16px;
+      font-weight:700;
+      text-decoration:none;
+      color:var(--text);
+      box-shadow:0 10px 25px rgba(24,119,242,.10);
+      transition:.2s;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 32px rgba(24,119,242,.18);
+    }
+
+    /* Banner */
+    .ad-box{
+      margin:28px 0;
+      display:flex;
+      justify-content:center;
+    }
+
+    /* Footer */
+    .footer{
+      margin-top:18px;
+      text-align:center;
+      font-size:12px;
+      opacity:.65;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spin"></div>
+  </div>
+
+  <div class="wrap">
+
+    <h1>🔥 Trik FB Pro Terbukti</h1>
+    <p>
+      Tools & strategi creator FB Pro global.<br>
+      Jika satu link error, silakan coba link lainnya.
+    </p>
+
+    <!-- Adsterra Direct Links -->
+    <div class="links">
+
+      <a class="btn ad-link"
+        href="https://rightyrely.com/q4rw20be?key=cf57d2df6877d8ed695373650dea8b21">
+        Link 1
+      </a>
+
+      <a class="btn ad-link"
+        href="https://rightyrely.com/igqd3i66?key=fc787923e1c5aa2b303da2ed85dbe01b">
+        Link 2
+      </a>
+
+      <a class="btn ad-link"
+        href="https://rightyrely.com/tgx3mczkxg?key=2f36413226962f73e8179273f55f298b">
+        Link 3
+      </a>
+
+      <a class="btn ad-link"
+        href="https://rightyrely.com/gvhntdpnn?key=d0a07ecd88503401d8be2fd92f3b863d">
+        Link 4
+      </a>
+
+      <a class="btn ad-link"
+        href="https://rightyrely.com/um31e3cebr?key=1fb0cf768c870e23efcfe0fea27ef744">
+        Link 5
+      </a>
+
+    </div>
+
+    <!-- Banner Adsterra 300x250 -->
+    <div class="ad-box">
+      <script>
+        atOptions = {
+          'key' : 'ecb163f7c4728d43dc7547667ac7d3e9',
+          'format' : 'iframe',
+          'height' : 250,
+          'width' : 300,
+          'params' : {}
+        };
+      </script>
+      <script src="https://rightyrely.com/ecb163f7c4728d43dc7547667ac7d3e9/invoke.js"></script>
+    </div>
+
+    <div class="footer">
+      Optimized for global traffic • Mobile-first • Safe ads experience
+    </div>
+
+  </div>
+
+  <!-- Popunder SAFE (1x per session only) -->
+  <script>
+    let popped = sessionStorage.getItem("popdone");
+
+    document.querySelectorAll(".ad-link").forEach(link=>{
+      link.addEventListener("click",()=>{
+        if(!popped){
+          let s = document.createElement("script");
+          s.src="https://rightyrely.com/41/8e/82/418e820963b629af816f98f708ac4d3c.js";
+          document.body.appendChild(s);
+
+          sessionStorage.setItem("popdone","yes");
+        }
+      });
+    });
+
+    // Loader off
+    window.onload = () => {
+      setTimeout(()=>{
+        document.getElementById("loader").style.display="none";
+      },650);
+    };
+  </script>
+
+</body>
+</html>
